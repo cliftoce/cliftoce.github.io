@@ -1,0 +1,115 @@
+\documentclass[10pt]{amsart}
+
+% 1. include useful packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{anysize}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{wasysym}
+
+% 2. set margin size {left}{right}{top}{bottom}
+\marginsize{0.5in}{0.5in}{0.5in}{0.5in}
+
+% 3. set paragraph indentation
+\setlength{\parindent}{0in}
+
+
+\begin{document}
+
+Everything you want to appear in the compiled TeX document should be typed between the ``begin document" command and the ``end document" command.
+
+\  % this "slash" inserts a line of white space between the blocks of text.
+
+% anything that appears to the right of a percentage symbol is a "comment" that will not appear in the compiled document.
+
+The commands at the top of this file are for: 1. including some useful packages (for using some symbols that are not be available by default, or for inserting an image file), 2. specifying margin size, and 3. setting the default paragraph indentation to zero.  Also notice that at the very top, in the documentclass command, you can change font-size to something other than 10pt.
+
+\
+
+For an exam notes sheet, you may find it practical to decrease the margins and or the font-size.
+
+\
+
+LaTeX does not support graphing.  If you want to include graphs or diagrams, save them as image file (.jpg, .png, ...) in the same folder as your .tex document, and then look up how to use the includegraphics command. 
+
+\
+
+There are several ways to insert mathematical expressions, but the basic rule of thumb is that they must appear between either single or double dollar signs.  For example, $f(x) = x^2 + 5$ will typeset this function in-line with the text, whereas
+
+$$
+f(x) = x^2 + 5
+$$
+
+will create a new line and center the function on it.
+
+\
+
+The following is a list of some of the most useful mathematical symbols for Math 121 material.  For more examples, simple search the web for ``LaTeX Symbols." 
+
+\
+
+$$
++, -, \times, /  % basic arithmetic operations (alternatively, you can use \cdot to create a dot for multiplication instead of an X)
+$$
+
+$$
+\pm  % ``plus or minus" symbol
+$$
+
+$$
+=, \neq  % ``equal to" and "not equal to" symbols.
+$$
+
+$$
+x^2, e^x  % superscripts, i.e. exponents
+$$
+
+$$
+\sqrt{x}, \sqrt[3]{x}, \sqrt[n]{x}  % square root, cube root, nth root
+$$
+
+$$
+\frac{d}{dx}  % this is the basic fraction command used to write the derivative operator ``d by dx"
+$$
+
+$$
+\lim_{x \rightarrow \infty} f(x)  % here we see commands for limit, the arrow symbol, the infinity symbol, and also the use of subscripts
+$$
+
+$$
+\sin x, \cos x, \tan x, \csc x, \sec x, \cot x  % trig functions
+$$
+
+$$
+\arcsin x, \arccos x, \arctan x  % inverse trig functions, version 1
+$$
+
+$$
+\sin^{-1} x, \cos^{-1} x, \tan^{-1} x  % inverse trig functions, version 2
+$$
+
+$$
+\ln x, \log x, \log_{a} x  % logarithm functions
+$$
+
+$$
+<, >, \leq, \geq  % inequalities (notice that the strict inequalities are easy, but the non-strict inequalities require special commands)
+$$
+
+
+A few other tips:
+
+\
+
+1. Use \hspace{0.5in} to insert one-half inch of horizontal whitespace (or change 0.5 to something else to insert a custom amount).  Similarly, 
+
+\vspace{0.5in} 
+
+will insert one-half inch of vertical whitespace (but the command must be set on a line by itself)
+
+\
+
+2. If an subscript or superscript includes more than a single character, you must use curly braces to group it all together, e.g. $x^2$ is fine, but for more extensive superscripts we need something like $x^{25}$, $x^{2-3y}$, etc.  This is also seen above in the limit command, where the entire subscript must be placed within curly braces.
+
+\end{document}

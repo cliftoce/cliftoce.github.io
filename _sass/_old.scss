@@ -1,0 +1,493 @@
+/* styling from old KU site */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: #FFF; //#464646;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #6e6e6e;
+}
+
+html { overflow: -moz-scrollbars-vertical !important; }
+
+a {
+    text-decoration: underline;
+
+    &:link {
+        color: #6e6e6e;
+    }
+
+    &:visited {
+        color: #6e6e6e;
+    }
+
+    &:hover {
+        color: #464646;
+    }
+    
+    &:active {
+        color: #6e6e6e;
+    }
+}
+h1 {
+    font-family: "cronos-pro-1","cronos-pro-2",sans-serif;
+    color: #464646;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 100px;
+    text-shadow: 1px 1px 1px #ffffff;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#193853')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#193853');
+    padding: 0 0 10px 0;
+    margin: 0;
+
+    a {
+        &:link {
+            color: #464646;
+            text-decoration: none;
+        }
+
+        &:active {
+            color: #464646;
+            text-decoration: none;
+        }
+
+        &:visited {
+            color: #464646;
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: #464646;
+            text-decoration: underline;
+        }
+    }
+}
+h2 {
+    font-family: "cronos-pro-1","cronos-pro-2",sans-serif;
+    color: #6e6e6e;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0 0 15px 0;
+    margin: 0;
+}
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6e6e6e;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+
+    a {
+        text-decoration: none;
+        color: #6e6e6e;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+img {
+    border: 0;
+    }
+p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 0 15px 0;
+    }
+ul, ol {
+    font-size: 14px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+/* ACTIVE PAGE HIGHLIGHTING */
+
+/* academics_sub-header */
+body#academics a#academicsnav,
+body#education a#educationnav,
+body#outreach a#outreachnav,
+body#research a#researchnav,
+body#teaching a#teachingnav,
+body#technology a#technologynav {
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #FFFFFF;
+}
+
+/* art_sub-header */
+body#art a#artnav,
+body#graphics a#graphicsnav,
+body#music a#musicnav,
+body#photography a#photographynav,
+body#web a#webnav {
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #FFFFFF;
+}
+
+/* athletics_sub-header */
+body#athletics a#athleticsnav,
+body#aikido a#aikidonav,
+body#basketball a#basketballnav,
+body#cycling a#cyclingnav,
+body#scuba a#scubanav,
+body#soccer a#soccernav,
+body#swimming a#swimmingnav {
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #FFFFFF;
+}
+
+/* fa2012math121_sub-header */
+body#fa2012math121 a#fa2012math121nav,
+body#fa2012math121hwpol a#fa2012math121hwpolnav,
+body#fa2012math121hwass a#fa2012math121hwassnav {
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #FFFFFF;
+}
+
+/* fa2013math121_sub-header */
+body#fa2013math121 a#fa2013math121nav,
+body#fa2013math121pol a#fa2013math121polnav,
+body#fa2013math121ass a#fa2013math121assnav {
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #FFFFFF;
+}
+
+/* sp2014math122_sub-header */
+body#sp2014math122 a#sp2014math122nav,
+body#sp2014math122pol a#sp2014math122polnav,
+body#sp2014math122ass a#sp2014math122assnav {
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #FFFFFF;
+}
+
+/* main header */
+body#home a#homenav,
+body#academics a#mainacademicsnav,
+body#education a#mainacademicsnav,
+body#outreach a#mainacademicsnav,
+body#research a#mainacademicsnav,
+body#teaching a#mainacademicsnav,
+body#technology a#mainacademicsnav,
+body#m121f2012 a#mainacademicsnav,
+body#m121f2012hwpol a#mainacademicsnav,
+body#m121f2012hwass a#mainacademicsnav,
+body#art a#mainartnav,
+body#graphics a#mainartnav,
+body#music a#mainartnav,
+body#photography a#mainartnav,
+body#web a#mainartnav,
+body#athletics a#mainathleticsnav,
+body#aikido a#mainathleticsnav,
+body#basketball a#mainathleticsnav,
+body#cycling a#mainathleticsnav,
+body#scuba a#mainathleticsnav,
+body#soccer a#mainathleticsnav,
+body#swimming a#mainathleticsnav {
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #000000;
+}
+
+
+
+/* PAGE LAYOUT */
+
+#container {
+    background-image: url(/img/style/header-bg.jpg);
+    width: 100%;
+    background-repeat: repeat-x;
+    background-color: #FFF;
+}
+#header {
+    color: #FFFFFF;
+    width: 960px;
+    height: 32px;
+    padding-top: 16px;
+    text-align: left;
+    margin: 0 auto;
+
+    a {
+        color: #FFFFFF;
+        text-shadow: 2px 2px 2px #0B2440;
+        text-decoration: none;
+
+        &:hover {
+            color: #999999;
+        }
+    }
+}
+#headerTop {
+    width: 100%;
+    height: 10px;
+    background-image: url(/img/style/header-top-bg.jpg);
+    background-repeat: repeat-x;
+}
+#headerWrapper {
+    background-image: url(/img/style/header-bg.jpg);
+    width: 100%;
+    background-repeat: repeat-x;
+    background-color: #FFF;
+}
+#headerTransition {
+    width: 100%;
+    height: 12px;
+    background-image: url(/img/style/header-transition-bg.jpg);
+    background-repeat: repeat-x;
+}
+#nav {
+    margin: 0;
+    padding: 3px 0 0 0;
+    list-style-type: none;
+
+    a {
+        display: block;
+        font-size: 12px;
+        color: #FFFFFF;
+        text-shadow: 2px 2px 2px #0B2440;
+        /* For IE 8 */
+        -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#0B2440')";
+        /* For IE 5.5 - 7 */
+        filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#0B2440');
+        text-decoration: none;
+        text-align: right;
+        padding: 0;
+
+        &:hover {
+            color: #999999;
+        }
+    }
+
+    li {
+        float: left;
+        padding: 0 0 0 30px;
+    }
+}
+#homeTitle {
+    background-image: url(/img/style/home-bg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #999999;
+}
+#interiorTitle {
+    background-image: url(/img/style/interior-bg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #999999;
+}
+#constructionTitle {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #999999;
+}
+#homeTitleContent {
+    width: 960px;
+    text-align: left;
+    margin: 0 auto;
+}
+#interiorTitleContent {
+    width: 960px;
+    height: 100px;
+    text-align: left;
+    margin: 0 auto;
+}
+#interiorTitleMenu {
+    font-size: 14px;
+    text-align: right;
+    color: #696969;
+
+    a {
+        color: #696969;
+        text-decoration: none;
+
+        &:hover {
+            color: #464646;
+            text-decoration: underline;
+        }
+    }
+}
+#homeTitleText {
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #454545;   
+    align: left;
+
+    a {
+        color: #FFF;
+
+        &:hover {
+            color: #464646;
+            text-shadow: 0px 0px 0px;
+        }
+    }
+}
+#headerBottom {
+    width: 100%;
+    height: 12px;
+    background-image: url(/img/style/header-bottom-bg.jpg);
+    background-repeat: repeat-x;
+}
+#main, #mainHome {
+    width: 960px;
+    font-size: 14px;
+    padding: 30px 0 30px 0;
+    text-align: left;
+    margin: 0 auto;
+
+    p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+#columnLeft {
+    width: 663px;
+    padding-right: 25px; 
+    border-right: 1px dotted #c8c8c8;
+}
+#columnRight {
+    width: 245px;
+    padding-left: 25px;
+
+    p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+#footerWrapper {
+    background-image: url(/img/style/footer-bg.jpg);
+    background-repeat: repeat-x;
+}
+#footer {
+    width: 960px;
+    height: 28px;
+    padding: 16px 0 0 0;
+    font-size: 11px;
+    text-align: left;
+    margin: 0 auto;
+}
+#footerTop {
+    width: 100%;
+    height: 12px;
+    background-image: url(/img/style/footer-top-bg.jpg);
+    background-repeat: repeat-x;
+}
+#footerBottom {
+    width: 100%;
+    height: 10px;
+    background-image: url(/img/style/footer-bottom-bg.jpg);
+    background-repeat: repeat-x;
+}
+#footerModDate {
+    float: left;
+    font-size: 11px;
+    color: #ffffff;
+    text-shadow: -1px -1px 1px #000000;
+}
+#footerMenu {
+    float: right;
+    color: #ffffff;
+
+    ul {
+        font-size: 11px;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline;
+        margin: 0;
+        padding: 0 0 0 16px;
+    }
+
+    a {
+        color: #ffffff;
+        text-decoration: none;
+        text-shadow: -1px -1px 1px #000000;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+#sidebar {
+    width: 180px;
+    text-align: left;
+    /* font-size: 12px; */
+
+    p {
+        /* font-size: 12px; */
+        line-height: 18px;
+    }
+}
+
+.compactList {
+    font-size: 13px;
+    line-height: 16px;
+    padding: 4px 0 0 0;
+}
+.photoShadow {
+    -moz-box-shadow: 3px 3px 4px #454545;
+    -webkit-box-shadow: 3px 3px 4px #454545;
+    box-shadow: 3px 3px 4px #454545;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#454545')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#454545');
+}
+.floatingBox {
+    background-color:#F0F0F0; 
+    padding: 10px; 
+    text-align:left;
+    /* repeat of .photoShadow (see above) */
+    -moz-box-shadow: 3px 3px 4px #454545;
+    -webkit-box-shadow: 3px 3px 4px #454545;
+    box-shadow: 3px 3px 4px #454545;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#454545')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#454545');
+}
+
+/* horizontal hidden header menu */
+.headerMenu {
+    float:right;
+    padding-left:20px;
+    margin:0;
+    font-size:14px;
+
+    a {
+        padding-left:20px;
+        display:block;
+    }
+
+    div {
+        position:absolute;
+        left:-9999px;
+        top:-9999px;
+        list-style-type:none;
+    }
+
+    &:hover {
+        position:relative;
+        background:#464646; 
+
+        div {
+            left:-540px;
+            top:0px;
+            background:#464646;
+            padding:0px;
+
+            a {
+                padding:5px;
+                display:inline;
+            }
+        }
+    }
+}
