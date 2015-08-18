@@ -11,5 +11,3 @@ github_username:  cliftoce
 
 # Build settings
 markdown: kramdown
-
-gems: jekyll-last-modified-at
