@@ -30,20 +30,18 @@ Lawrence,  KS  66045-7594
 
 	<h3>Other Sites:</h3>
 	<br />
-	<ul>
 		{% if site.linkedin_username %}
-			<li><img src="/img/icons/linkedin.svg" style="height:1em;"> <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank">/{{ site.linkedin_username }}</a></li><br>
+			<a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><img src="/img/icons/linkedin.svg" style="height:1em; padding:0 8px 4px 4px;">/{{ site.linkedin_username }}</a><br><br>
 			{% endif %}
 		{% if site.github_username %}
-			<li><img src="/img/icons/github.svg" style="height:1em;"> <a href="https://github.com/{{ site.github_username }}" target="_blank">/{{ site.github_username }}</a></li><br>
+			<a href="https://github.com/{{ site.github_username }}" target="_blank"><img src="/img/icons/github.svg" style="height:1em; padding:0 8px 4px 4px;"">/{{ site.github_username }}</a><br><br>
 			{% endif %}
 		{% if site.google_username %}
-			<li><img src="/img/icons/googleplus.svg" style="height:1em;"> <a href="https://plus.google.com/+{{ site.google_username }}" target="_blank">/+{{ site.google_username }}</a></li><br>
+			<a href="https://plus.google.com/+{{ site.google_username }}" target="_blank"><img src="/img/icons/googleplus.svg" style="height:1em; padding:0 8px 4px 4px;"">/+{{ site.google_username }}</a><br><br>
 			{% endif %}
 		{% if site.flickr_username %}
-			<li><img src="/img/icons/flickr.svg" style="height:1em;"> <a href="https://www.flickr.com/photos/{{ site.flickr_username }}" target="_blank">/+{{ site.flickr_username }}</a></li><br>
+			<a href="https://www.flickr.com/photos/{{ site.flickr_username }}" target="_blank"><img src="/img/icons/flickr.svg" style="height:1em; padding:0 8px 4px 4px;"">/{{ site.flickr_username }}</a><br><br>
 			{% endif %}
-	</ul>
 	<br>
 	<h3>Links:</h3>
 	<br />
