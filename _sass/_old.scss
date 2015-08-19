@@ -389,6 +389,16 @@ body#swimming a#mainathleticsnav {
     font-size: 11px;
     color: #ffffff;
     text-shadow: -1px -1px 1px #000000;
+
+    a {
+        color: #ffffff;
+        text-decoration: none;
+        text-shadow: -1px -1px 1px #000000;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 #footerMenu {
     float: right;

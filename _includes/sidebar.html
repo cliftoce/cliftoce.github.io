@@ -1,4 +1,7 @@
 <div id="sidebar">
+
+<!--
+
 <h3>Contact Information:</h3>
 <br />
 <p><strong>Cody E. Clifton, Ph.D.</strong>
@@ -13,7 +16,6 @@
 Lawrence,  KS  66045-7594 
 <br />
 <br />
-<!--
 <strong>Office</strong>: 543 Snow Hall <br />
 <strong>Hours</strong>: MW 9 - 9:50 a.m. <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or by appointment
@@ -22,7 +24,39 @@ Lawrence,  KS  66045-7594
 <strong>Email</strong>: <a href="mailto:cclifton@ku.edu"> cclifton@ku.edu</a>
 <br />
 <br />
--->
-<strong><a href="http://www.linkedin.com/in/codyeclifton" target="_blank">LinkedIn</a></strong>
 </p>
+
+-->
+
+	<h3>Other Sites:</h3>
+	<br />
+	<ul>
+		{% if site.linkedin_username %}
+			<li><img src="/img/icons/linkedin.svg" style="height:1em;"> <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank">/{{ site.linkedin_username }}</a></li><br>
+			{% endif %}
+		{% if site.github_username %}
+			<li><img src="/img/icons/github.svg" style="height:1em;"> <a href="https://github.com/{{ site.github_username }}" target="_blank">/{{ site.github_username }}</a></li><br>
+			{% endif %}
+		{% if site.google_username %}
+			<li><img src="/img/icons/googleplus.svg" style="height:1em;"> <a href="https://plus.google.com/+{{ site.google_username }}" target="_blank">/+{{ site.google_username }}</a></li><br>
+			{% endif %}
+		{% if site.flickr_username %}
+			<li><img src="/img/icons/flickr.svg" style="height:1em;"> <a href="https://www.flickr.com/photos/{{ site.flickr_username }}" target="_blank">/+{{ site.flickr_username }}</a></li><br>
+			{% endif %}
+	</ul>
+	<br>
+	<h3>Links:</h3>
+	<br />
+	<ul>
+		<li><a href="http://www.ku.edu/" target="_blank">The University of Kansas (KU)</a></li>
+		<br />
+		<li><a href="http://www.math.ku.edu/" target="_blank">KU Mathematics Department</a></li>
+		<br />
+		<li><a href="http://www.math.ku.edu/studentorgs/gso/" target="_blank">KU Mathematics GSO</a></li>
+		<br />
+		<li><a href="https://www.facebook.com/groups/2204547131/" target="_blank">KU Ki-Aikido Club</a></li>
+		<br />
+		<li><a href="http://www.ams.org/programs/studentchapters" target="_blank">AMS Graduate Student Chapters</a></li>
+		<br />
+	</ul>
 </div>
