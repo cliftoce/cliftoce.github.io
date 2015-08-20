@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body {% if page.subsection %}id="{{ page.subsection }}"{% endif %}>
+
+	{% include header.html %}
+
+	{% if page.course %}{% include subheaders/courses/{{ page.course }}_subheader.html %}{% endif %}
+
+	<div id="main">
+		<table width="960" height="auto" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td width="100%" align="right" valign="top">
+
+					{{ content }}
+
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	{% include footer.html %}
+
+</body>
+
+</html>

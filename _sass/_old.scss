@@ -106,91 +106,19 @@ ul, ol {
     padding: 0 20px;
 }
 
+
+
 /* ACTIVE PAGE HIGHLIGHTING */
 
-/* academics_sub-header */
-body#academics a#academicsnav,
-body#education a#educationnav,
-body#outreach a#outreachnav,
-body#research a#researchnav,
-body#teaching a#teachingnav,
-body#technology a#technologynav {
-    font-weight: bold;
-    text-shadow: 3px 3px 3px #FFFFFF;
-}
-
-/* art_sub-header */
-body#art a#artnav,
-body#graphics a#graphicsnav,
-body#music a#musicnav,
-body#photography a#photographynav,
-body#web a#webnav {
-    font-weight: bold;
-    text-shadow: 3px 3px 3px #FFFFFF;
-}
-
-/* athletics_sub-header */
-body#athletics a#athleticsnav,
-body#aikido a#aikidonav,
-body#basketball a#basketballnav,
-body#cycling a#cyclingnav,
-body#scuba a#scubanav,
-body#soccer a#soccernav,
-body#swimming a#swimmingnav {
-    font-weight: bold;
-    text-shadow: 3px 3px 3px #FFFFFF;
-}
-
-/* fa2012math121_sub-header */
-body#fa2012math121 a#fa2012math121nav,
-body#fa2012math121hwpol a#fa2012math121hwpolnav,
-body#fa2012math121hwass a#fa2012math121hwassnav {
-    font-weight: bold;
-    text-shadow: 3px 3px 3px #FFFFFF;
-}
-
-/* fa2013math121_sub-header */
-body#fa2013math121 a#fa2013math121nav,
-body#fa2013math121pol a#fa2013math121polnav,
-body#fa2013math121ass a#fa2013math121assnav {
-    font-weight: bold;
-    text-shadow: 3px 3px 3px #FFFFFF;
-}
-
-/* sp2014math122_sub-header */
-body#sp2014math122 a#sp2014math122nav,
-body#sp2014math122pol a#sp2014math122polnav,
-body#sp2014math122ass a#sp2014math122assnav {
-    font-weight: bold;
-    text-shadow: 3px 3px 3px #FFFFFF;
-}
-
-/* main header */
-body#home a#homenav,
-body#academics a#mainacademicsnav,
-body#education a#mainacademicsnav,
-body#outreach a#mainacademicsnav,
-body#research a#mainacademicsnav,
-body#teaching a#mainacademicsnav,
-body#technology a#mainacademicsnav,
-body#m121f2012 a#mainacademicsnav,
-body#m121f2012hwpol a#mainacademicsnav,
-body#m121f2012hwass a#mainacademicsnav,
-body#art a#mainartnav,
-body#graphics a#mainartnav,
-body#music a#mainartnav,
-body#photography a#mainartnav,
-body#web a#mainartnav,
-body#athletics a#mainathleticsnav,
-body#aikido a#mainathleticsnav,
-body#basketball a#mainathleticsnav,
-body#cycling a#mainathleticsnav,
-body#scuba a#mainathleticsnav,
-body#soccer a#mainathleticsnav,
-body#swimming a#mainathleticsnav {
+.headerActive {
     font-weight: bold;
     text-shadow: 3px 3px 3px #000000;
 }
+.subheaderActive {
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #FFFFFF;
+}
+
 
 
 
@@ -206,7 +134,7 @@ body#swimming a#mainathleticsnav {
     color: #FFFFFF;
     width: 960px;
     height: 32px;
-    padding-top: 16px;
+    padding: 12px 0 4px 0;
     text-align: left;
     margin: 0 auto;
 
@@ -232,10 +160,16 @@ body#swimming a#mainathleticsnav {
     background-repeat: repeat-x;
     background-color: #FFF;
 }
-#headerTransition {
+#headerBottom {
     width: 100%;
     height: 12px;
-    background-image: url(/img/style/header-transition-bg.jpg);
+    background-image: url(/img/style/header-bottom-bg.jpg);
+    background-repeat: repeat-x;
+}
+#subheaderBottom {
+    width: 100%;
+    height: 12px;
+    background-image: url(/img/style/sub-header-bottom-bg.jpg);
     background-repeat: repeat-x;
 }
 #nav {
@@ -328,13 +262,7 @@ body#swimming a#mainathleticsnav {
         }
     }
 }
-#headerBottom {
-    width: 100%;
-    height: 12px;
-    background-image: url(/img/style/header-bottom-bg.jpg);
-    background-repeat: repeat-x;
-}
-#main, #mainHome {
+#main {
     width: 960px;
     font-size: 14px;
     padding: 30px 0 30px 0;

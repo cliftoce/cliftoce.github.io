@@ -1,0 +1,29 @@
+# Site structure: sections & subsections
+- name: academics
+  nav: Academics
+  subsections:
+    - name: education
+      nav: Education
+    - name: outreach
+      nav: Outreach
+    - name: research
+      nav: Research
+    - name: teaching
+      nav: Teaching
+    - name: technology
+      nav: Technology Skills
+
+- name: aikido
+  nav: Aikido
+
+- name: design
+  nav: Design
+
+- name: music
+  nav: Music
+
+- name: photography
+  nav: Photography
+
+- name: woodworking
+  nav: Woodworking
