@@ -12,7 +12,7 @@
         <li>Navigation: </li>
         <li><a href="/">Home</a></li>
         {% for section in site.data.site_struct %}
-          <li><a {% if section.name == "academics" %}href="/{{ section.name }}/"{% else %}href="/temp/under_construction.html"{% endif %}>{{ section.nav }}</a></li>
+          <li><a {% if section.name == "academics" %}href="/{{ section.name }}/"{% else %}href="/temp/under_construction.html"{% endif %}>{{ section.title }}</a></li>
         {% endfor %}
       </ul>
     </div>

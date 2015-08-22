@@ -2,7 +2,7 @@
 layout: simple
 ---
 
-{% if page.section %}{% include subheaders/{{ page.section }}_subheader.html %}{% endif %}
+{% include subheader.html %}
 
 <div id="main">
 	<table width="960" height="auto" border="0" cellpadding="0" cellspacing="0">
@@ -14,11 +14,11 @@ layout: simple
 			</td>
 			<td width="230" align="right" valign="top" style="border-left: 1px dotted #c8c8c8;">
 
-				{% include sidebars/profiles.html %}
+				{% include profiles.html %}
 
 				<br /><br /><hr style="width:200px; border:dotted #c8c8c8; border-width:1px 0 0 0; height:0;line-height:0px;font-size:0;margin:0;padding:0;"><br /><br />
 
-				{% include sidebars/links.html %}
+				{% include links.html %}
 
 			</td>
 		</tr>

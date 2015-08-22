@@ -1,29 +1,39 @@
 # Site structure: sections & subsections
 - name: academics
-  nav: Academics
+  title: Academics
   subsections:
     - name: education
-      nav: Education
+      title: Education
     - name: outreach
-      nav: Outreach
+      title: Outreach
     - name: research
-      nav: Research
+      title: Research
     - name: teaching
-      nav: Teaching
+      title: Teaching
     - name: technology
-      nav: Technology Skills
+      title: Technology Skills
+      last: y
 
 - name: aikido
-  nav: Aikido
+  title: Aikido
+  subsections:
+    - name: aikidonw
+      title: Aikido NW
+      last: y
 
 - name: design
-  nav: Design
+  title: Design
+  subsections:
+    - name: shirtwoot
+      title: Shirt.Woot!
+      last: y
 
 - name: music
-  nav: Music
+  title: Music
 
 - name: photography
-  nav: Photography
+  title: Photography
 
 - name: woodworking
-  nav: Woodworking
+  title: Woodworking
+  last: y

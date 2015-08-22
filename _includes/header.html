@@ -7,7 +7,7 @@
     </div>
     <div style="float:right; padding-top:2px;">
       {% for section in site.data.site_struct %}
-        <a {% if section.name == page.section %}class="headerActive"{% endif %} {% if section.name == "academics" %}href="/{{ section.name }}/"{% else %}href="/temp/under_construction.html"{% endif %}>{{ section.nav }}</a>{% if section.name != "woodworking" %} &nbsp;&nbsp;|&nbsp;&nbsp; {% endif %}
+        <a {% if section.name == page.section %}class="headerActive"{% endif %} href="/{{ section.name }}/">{{ section.title }}</a>{% if section.last != "y" %} &nbsp;&nbsp;|&nbsp;&nbsp; {% endif %}
       {% endfor %}
     </div>
   </div><!--end header -->

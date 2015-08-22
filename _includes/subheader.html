@@ -1,3 +1,4 @@
+{% if page.section == "home" %}
 <div id="homeTitle">
   <div id="homeTitleContent">
     <table width="960" height="320" border="0" cellpadding="0" cellspacing="0">
@@ -16,5 +17,26 @@
     </table>
   </div><!--end homeTitleContent -->
 </div><!--end homeTitle -->
+{% else %}
+<div id="interiorTitle">
+  <div id="interiorTitleContent">
+    <table width="960" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        {% for section in site.data.site_struct %}
+        {% if section.name == page.section %}
+        <td><h1><a {% if page.subsection == nil %}class="subheaderActive"{% endif %} href="/{{ section.name }}/">{{ section.title }}</a></h1></td>
+        <td id="interiorTitleMenu">
+          {% for subsection in section.subsections %}
+          <a {% if subsection.name == page.subsection %}class="subheaderActive"{% endif %} href="/{{ page.section }}/{{ subsection.name }}/">{{ subsection.title }}</a>{% if subsection.last != "y" %} &nbsp;&nbsp;|&nbsp;&nbsp; {% endif %}
+          {% endfor %}
+          {% if section.name == "academics" %} &nbsp;&nbsp;|&nbsp;&nbsp; <a href="/academics/Cody_Clifton_CV.pdf" target="_blank">CV</a>{% endif %}
+        </td>
+        {% endif %}
+        {% endfor %}
+      </tr>
+    </table>
+  </div><!--end interiorTitleContent -->
+</div><!--end interiorTitle -->
+{% endif %}
 
 <div id="subheaderBottom"></div>

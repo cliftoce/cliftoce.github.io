@@ -1,0 +1,54 @@
+<div id="sidebar" class="floatingBox">
+	<h3>Links:</h3>
+	<br>
+	<ul>
+	{% if page.section == "home" %}
+		<li><a href="http://www.math.ku.edu/" target="_blank">KU Mathematics Department</a></li>
+		<br>
+		<li><a href="http://www.math.ku.edu/studentorgs/gso/" target="_blank">KU Mathematics GSO</a></li>
+		<br>
+		<li><a href="https://www.facebook.com/groups/2204547131/" target="_blank">KU Ki-Aikido Club</a></li>
+		<br>
+		<li><a href="http://www.ams.org/programs/studentchapters" target="_blank">AMS Graduate Student Chapters</a></li>
+		<br>
+	{% elsif page.section == "academics" %}
+		<li><a href="http://www.ku.edu/" target="_blank">The University of Kansas (KU)</a></li>
+		<br>
+		<li><a href="http://www.math.ku.edu/" target="_blank">KU Mathematics Department</a></li>
+		<br>
+		<li><a href="http://www.math.ku.edu/studentorgs/gso/" target="_blank">KU Mathematics GSO</a></li>
+		<br>
+		<li><a href="http://www.ams.org/programs/studentchapters" target="_blank">AMS Graduate Student Chapters</a></li>
+		<br>
+	{% elsif page.section == "aikido" %}
+		<li><a href="http://aikidonw.com/" target="_blank">Aikido Northwest</a></li>
+		<br>
+		<li><a href="http://kansaskisociety.org/" target="_blank">Kansas Ki Society</a></li>
+		<br>
+		<li><a href="https://www.facebook.com/groups/2204547131/" target="_blank">KU Ki-Aikido Club</a></li>
+		<br>
+		<li><a href="https://www.whitman.edu/student-life/student-clubs-and-organizations/aikido" target="_blank">Whitman Aikido Club</a></li>
+		<br>
+	{% elsif page.section == "design" %}
+		<li><a href="http://shirt.woot.com/derby" target="_blank">Shirt.Woot! Derby</a></li>
+		<br>
+		<li><a href="http://www.blender.org/" target="_blank">Blender</a></li>
+		<br>
+	{% elsif page.section == "music" %}
+		<li><a href="http://www.thesession.org/" target="_blank">The Session</a></li>
+		<br>
+		<li><a href="http://www.lawrencesession.com/" target="_blank">Lawrence Irish Session</a></li>
+		<br>
+		<li><a href="http://www.nigelgatherer.com/" target="_blank">Nigel Gatherer's Traditional Music</a></li>
+		<br>
+	{% elsif page.section == "photography" %}
+		<li><a href="https://www.flickr.com/photos/cliftoce/" target="_blank">Flickr Photostream</a></li>
+		<br>
+		<li><a href="http://yourshot.nationalgeographic.com/" target="_blank">Nat. Geo. "Your Shot"</a></li>
+		<br>
+	{% elsif page.section == "woodworking" %}
+		<li><a href="http://www.woodturningonline.com/" target="_blank">Woodturning Online</a></li>
+		<br>
+	{% endif %}
+	</ul>
+</div>
