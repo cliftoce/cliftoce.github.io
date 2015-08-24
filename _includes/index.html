@@ -1,0 +1,22 @@
+<div style="width:680px;" class="floatingBox">
+  {% for section in site.data.site_struct %}
+    {% if section.name == page.section %}
+      <h3>{{ section.title }} Index:</h3>
+      <br />
+      {% for subsection in section.subsections %}
+        <strong><a href="{{ subsection.name }}">{{ subsection.title }}</a></strong><br />
+        <ul>
+          {% for subsubsection in subsection.subsubsections %}
+          <li><a href="{{ subsection.name }}#{{ subsubsection.name }}">{{ subsubsection.title }}</a></li>
+          {% endfor %}
+          <br />
+        </ul>
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+  {% if section.name == "academics" %}
+    <a href="Cody_Clifton_CV.pdf" target="_blank"><strong>CV</strong></a>
+    <br />
+    <br />
+  {% endif %}
+</div>

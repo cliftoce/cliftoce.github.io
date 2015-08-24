@@ -4,12 +4,38 @@
   subsections:
     - name: education
       title: Education
+      subsubsections:
+        - name: degrees
+          title: Degrees
+        - name: awards
+          title: Awards
+          last: y
     - name: outreach
       title: Outreach
+      subsubsections:
+        - name: past
+          title: Past Events
+          last: y
     - name: research
       title: Research
+      subsubsections:
+        - name: interests
+          title: Interest Areas
+        - name: publications
+          title: Publications
+        - name: presentations
+          title: Presentations and Lectures
+        - name: conferences
+          title: Conferences and Workshops Attended
+          last: y
     - name: teaching
       title: Teaching
+      subsubsections:
+        - name: past
+          title: Past Courses
+        - name: other
+          title: Other Duties
+          last: y
     - name: technology
       title: Technology Skills
       last: y
@@ -19,6 +45,8 @@
   subsections:
     - name: essays
       title: Essays
+    - name: photos
+      title: Photos
     - name: videos
       title: Videos
       last: y
