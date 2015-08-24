@@ -3,14 +3,17 @@
 	<br />
 		{% if site.linkedin_username %}
 			<a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><img src="/img/icons/linkedin.svg" style="height:1em; padding:0 8px 4px 4px;">/{{ site.linkedin_username }}</a><br><br>
+		{% if site.google_username %}
+			<a href="https://plus.google.com/+{{ site.google_username }}" target="_blank"><img src="/img/icons/googleplus.svg" style="height:1em; padding:0 8px 4px 4px;"">/+{{ site.google_username }}</a><br><br>
+			{% endif %}
 			{% endif %}
 		{% if site.github_username %}
 			<a href="https://github.com/{{ site.github_username }}" target="_blank"><img src="/img/icons/github.svg" style="height:1em; padding:0 8px 4px 4px;"">/{{ site.github_username }}</a><br><br>
 			{% endif %}
-		{% if site.google_username %}
-			<a href="https://plus.google.com/+{{ site.google_username }}" target="_blank"><img src="/img/icons/googleplus.svg" style="height:1em; padding:0 8px 4px 4px;"">/+{{ site.google_username }}</a><br><br>
-			{% endif %}
 		{% if site.flickr_username %}
 			<a href="https://www.flickr.com/photos/{{ site.flickr_username }}" target="_blank"><img src="/img/icons/flickr.svg" style="height:1em; padding:0 8px 4px 4px;"">/{{ site.flickr_username }}</a><br><br>
+			{% endif %}
+		{% if site.youtube_username %}
+			<a href="https://www.youtube.com/user/{{ site.youtube_username }}" target="_blank"><img src="/img/icons/youtube.svg" style="height:1em; padding:0 8px 4px 4px;"">/{{ site.youtube_username }}</a><br><br>
 			{% endif %}
 </div>

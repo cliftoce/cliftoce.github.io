@@ -17,8 +17,10 @@
 - name: aikido
   title: Aikido
   subsections:
-    - name: aikidonw
-      title: Aikido NW
+    - name: essays
+      title: Essays
+    - name: videos
+      title: Videos
       last: y
 
 - name: design
