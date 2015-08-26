@@ -1,0 +1,27 @@
+---
+layout: default
+title: Cody E. Clifton - Design - T-Shirts
+section: design
+subsection: shirts
+---
+
+<div align="left">
+
+	<div style="width:680px;" class="floatingBox">
+		<h3>T-Shirts:</h3>
+		<br>
+		{% for shirt in site.data.shirts reversed %}
+			<div class="gallery">
+				<ul>
+				    <li><strong>{{ shirt.date }}</strong> – {{ shirt.title }}. 
+						<div style="padding:8px 0 22px; text-align:center;">
+							<a href="{{ shirt.name }}"><img src="{{ shirt.name }}" alt="{{ shirt.name }}" width="290" class="photoShadow"/></a>(Shirt.Woot Derby: {% if shirt.derby %}<a href="https://shirt.woot.com/derby/archive/{{ shirt.derby }}/" target="_blank">#{{ shirt.derby }}</a>{% else %}N/A{% endif %})
+						</div>
+					</li>
+				</ul>
+			</div>
+		{% endfor %}
+		<br>
+	</div>
+
+</div>

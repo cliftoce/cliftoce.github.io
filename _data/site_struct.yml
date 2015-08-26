@@ -54,8 +54,8 @@
 - name: design
   title: Design
   subsections:
-    - name: shirtwoot
-      title: Shirt.Woot!
+    - name: shirts
+      title: T-Shirts
       last: y
 
 - name: music
@@ -63,7 +63,17 @@
 
 - name: photography
   title: Photography
+  subsections:
+    - name: equipment
+      title: Equipment
+    - name: sample
+      title: Sample Gallery
+      last: y
 
 - name: woodworking
   title: Woodworking
+  subsections:
+    - name: headphones
+      title: Headphones
+      last: y
   last: y

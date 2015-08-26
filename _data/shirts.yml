@@ -1,0 +1,70 @@
+# T-shirts list
+
+- name: 2011-05-15_Minesweeper.jpg
+  title: Minesweeper
+  date: May 15, 2011
+
+- name: 2011-05-24_Off_the_Grid.jpg
+  title: Off the Grid
+  date: May 24, 2011
+  derby: 300
+  votes: 12
+
+- name: 2011-06-03_Carrot_Crescendo_Catastrophe.jpg
+  title: Carrot Crescendo Catastrophe
+  date: June 3, 2011
+  derby: 202
+  votes: 47
+
+- name: 2011-06-30_Weighing_the_Options.jpg
+  title: Weighing the Options
+  date: June 30, 2011
+
+- name: 2011-07-02_Tuna_Fish_Too_v2.jpg
+  title: Tuna Fish Too
+  date: July 2, 2011
+  derby: 206
+  votes: 28
+
+- name: 2011-07-07_Outlying_Outlaw.jpg
+  title: Outlying Outlaw
+  date: July 7, 2011
+  derby: 207
+  votes: 26
+
+- name: 2011-07-08_Overkill.jpg
+  title: Overkill
+  date: July 8, 2011
+  derby: 207
+  votes: 39
+
+- name: 2011-07-12_Samureye.jpg
+  title: Samureye
+  date: July 12, 2011
+
+- name: 2011-07-14_Elemental_Rose.jpg
+  title: Elemental Rose
+  date: July 14, 2011
+  derby: 208
+  votes: 89
+
+- name: 2011-08-18_White_Fang.jpg
+  title: White Fang
+  date: August 18, 2011
+  derby: 213
+  votes: 11
+
+- name: 2012-01-27_A_Fishy_Arrangement.jpg
+  title: A Fishy Arrangement
+  date: January 27, 2012
+  derby: 236
+  votes: 80
+
+- name: 2015-08-25_KC_Beefs.png
+  title: Kansas City Beefs
+  date: August 25, 2015
+  derby: 471
+
+- name: 2015-08-26_Kingfisher.png
+  title: Kingfisher
+  date: August 26, 2015

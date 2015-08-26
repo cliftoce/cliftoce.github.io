@@ -94,7 +94,7 @@ h3 {
 }
 img {
     border: 0;
-    }
+}
 p {
     font-size: 14px;
     line-height: 22px;
@@ -392,6 +392,12 @@ ul, ol {
     /* For IE 5.5 - 7 */
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#454545');
 }
+
+.gallery {
+    width: 338px;
+    display: inline-block;
+}
+
 
 /* horizontal hidden header menu */
 .headerMenu {
