@@ -60,12 +60,34 @@
 
 - name: music
   title: Music
+  subsections:
+    - name: instruments
+      title: Instruments
+      subsubsections:
+        - name: mandolin
+          title: Mandolin
+        - name: violin
+          title: Violin
+        - name: banjo
+          title: Banjo
+        - name: misc
+          title: Miscellaneous
+          last: y
+    - name: recordings
+      title: Recordings
+      last: y
 
 - name: photography
   title: Photography
   subsections:
     - name: equipment
       title: Equipment
+      subsubsections:
+        - name: DSLR
+          title: DSLR
+        - name: point-and-shoot
+          title: Point-and-Shoot
+          last: y
     - name: sample
       title: Sample Gallery
       last: y
