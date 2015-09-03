@@ -6,7 +6,7 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    background-color: #FFF; //#464646;
+    background: #FFF; //#464646;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -38,7 +38,7 @@ h1 {
     font-size: 34px;
     font-weight: 600;
     line-height: 100px;
-    text-shadow: 1px 1px 1px #ffffff;
+    text-shadow: 1px 1px 1px #FFF;
     /* For IE 8 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#193853')";
     /* For IE 5.5 - 7 */
@@ -95,6 +95,7 @@ h3 {
 }
 img {
     border: 0;
+    max-width: 100%; // prevent image overflow at small window sizes
 }
 p {
     font-size: 14px;
@@ -113,11 +114,11 @@ ul, ol {
 
 .headerActive {
     font-weight: bold;
-    text-shadow: 3px 3px 3px #000000;
+    text-shadow: 3px 3px 3px #000;
 }
 .subheaderActive {
     font-weight: bold;
-    text-shadow: 3px 3px 3px #FFFFFF;
+    text-shadow: 3px 3px 3px #FFF;
 }
 
 
@@ -126,13 +127,11 @@ ul, ol {
 /* PAGE LAYOUT */
 
 #container {
-    background-image: url(/img/style/header-bg.jpg);
     width: 100%;
-    background-repeat: repeat-x;
-    background-color: #FFF;
+    background: #FFF url(/img/style/header-bg.jpg) repeat-x;
 }
 #header {
-    color: #FFFFFF;
+    color: #FFF;
     width: 960px;
     height: 32px;
     padding: 12px 0 4px 0;
@@ -140,7 +139,7 @@ ul, ol {
     margin: 0 auto;
 
     a {
-        color: #FFFFFF;
+        color: #FFF;
         text-shadow: 2px 2px 2px #0B2440;
         text-decoration: none;
 
@@ -152,26 +151,21 @@ ul, ol {
 #headerTop {
     width: auto;
     height: 10px;
-    background-image: url(/img/style/header-top-bg.jpg);
-    background-repeat: repeat-x;
+    background: url(/img/style/header-top-bg.jpg) repeat-x;
 }
 #headerWrapper {
-    background-image: url(/img/style/header-bg.jpg);
     width: 100%;
-    background-repeat: repeat-x;
-    background-color: #FFF;
+    background: #FFF url(/img/style/header-bg.jpg) repeat-x;
 }
 #headerBottom {
     width: 100%;
     height: 12px;
-    background-image: url(/img/style/header-bottom-bg.jpg);
-    background-repeat: repeat-x;
+    background: url(/img/style/header-bottom-bg.jpg) repeat-x;
 }
 #subheaderBottom {
     width: 100%;
     height: 12px;
-    background-image: url(/img/style/sub-header-bottom-bg.jpg);
-    background-repeat: repeat-x;
+    background: url(/img/style/sub-header-bottom-bg.jpg) repeat-x;
 }
 #nav {
     margin: 0;
@@ -181,7 +175,7 @@ ul, ol {
     a {
         display: block;
         font-size: 12px;
-        color: #FFFFFF;
+        color: #FFF;
         text-shadow: 2px 2px 2px #0B2440;
         /* For IE 8 */
         -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#0B2440')";
@@ -202,24 +196,16 @@ ul, ol {
     }
 }
 #homeTitle {
-    background-image: url(/img/style/home-bg.jpg);
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #999999;
+    background: #999999 url(/img/style/home-bg.jpg) no-repeat center;
 }
 #interiorTitle {
-    background-image: url(/img/style/interior-bg.jpg);
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #999999;
+    background: #999999 url(/img/style/interior-bg.jpg) no-repeat center;
 }
 #constructionTitle {
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #999999;
+    background: #999999 no-repeat center;
 }
 #homeTitleContent {
     width: 960px;
@@ -290,8 +276,8 @@ ul, ol {
     }
 }
 #footerWrapper {
-    background-image: url(/img/style/footer-bg.jpg);
-    background-repeat: repeat-x;
+    width: 100%;
+    background: url(/img/style/footer-bg.jpg) repeat-x;
 }
 #footer {
     width: 960px;
@@ -304,25 +290,23 @@ ul, ol {
 #footerTop {
     width: 100%;
     height: 12px;
-    background-image: url(/img/style/footer-top-bg.jpg);
-    background-repeat: repeat-x;
+    background: url(/img/style/footer-top-bg.jpg) repeat-x;
 }
 #footerBottom {
     width: 100%;
     height: 10px;
-    background-image: url(/img/style/footer-bottom-bg.jpg);
-    background-repeat: repeat-x;
+    background: url(/img/style/footer-bottom-bg.jpg) repeat-x;
 }
 #footerModDate {
     float: left;
     font-size: 11px;
-    color: #ffffff;
-    text-shadow: -1px -1px 1px #000000;
+    color: #FFF;
+    text-shadow: -1px -1px 1px #000;
 
     a {
-        color: #ffffff;
+        color: #FFF;
         text-decoration: none;
-        text-shadow: -1px -1px 1px #000000;
+        text-shadow: -1px -1px 1px #000;
 
         &:hover {
             text-decoration: underline;
@@ -331,7 +315,7 @@ ul, ol {
 }
 #footerMenu {
     float: right;
-    color: #ffffff;
+    color: #FFF;
 
     ul {
         font-size: 11px;
@@ -346,9 +330,9 @@ ul, ol {
     }
 
     a {
-        color: #ffffff;
+        color: #FFF;
         text-decoration: none;
-        text-shadow: -1px -1px 1px #000000;
+        text-shadow: -1px -1px 1px #000;
 
         &:hover {
             text-decoration: underline;
