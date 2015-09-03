@@ -1,5 +1,8 @@
 /* styling from old KU site */
 
+html { 
+    overflow: -moz-scrollbars-vertical !important; 
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -8,10 +11,8 @@ body {
     padding: 0;
     text-align: center;
     color: #6e6e6e;
+    min-width: 1024px;
 }
-
-html { overflow: -moz-scrollbars-vertical !important; }
-
 a {
     text-decoration: underline;
 
@@ -149,7 +150,7 @@ ul, ol {
     }
 }
 #headerTop {
-    width: 100%;
+    width: auto;
     height: 10px;
     background-image: url(/img/style/header-top-bg.jpg);
     background-repeat: repeat-x;
